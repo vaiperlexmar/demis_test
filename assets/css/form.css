@@ -1,0 +1,36 @@
+.form__container {
+    display: flex;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+    padding: 0 2rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.form__input {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid var(--main-gray);
+    transition: all 0.2s;
+    margin-bottom: 2rem;
+    min-height: 6rem;
+    font-size: 1.4rem;
+}
+
+.form__input:focus {
+    border-bottom: 2px solid var(--main-color);
+    outline: none;
+}
+
+.form__submit {
+    width: 100%;
+    font-weight: bold;
+    line-height: 1.2;
+    max-width: 30rem;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
