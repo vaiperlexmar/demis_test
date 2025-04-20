@@ -1,0 +1,55 @@
+@import "reset.css";
+@import "form.css";
+
+:root {
+    --main-color: #be1116;
+    --main-black: #333;
+    --main-gray: #deded2;
+}
+
+.header {
+    background-color: var(--main-color);
+    width: 100vw;
+    display: block;
+    padding: 2rem;
+}
+
+.link {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    gap: 0.5rem;
+}
+
+.link__arrow {
+    font-size: 2.8rem !important;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.1s all;
+    font-size: 1.4rem;
+}
+
+.btn_red {
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid #be1116;
+}
+
+.btn_red:hover {
+    background-color: #fff;
+    color: var(--main-color);
+}
+
+.btn:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
