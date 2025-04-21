@@ -51,7 +51,7 @@ $("#feedback-form").submit(function (e) {
                 });
             } else {
                 for (const field of response.errors) {
-                    $(`error__${field}`).textContent(response.errors[field]);
+                    $(`.error__${field}`).textContent(response.errors[field]);
                 }
             }
         },
