@@ -1,0 +1,35 @@
+.news__container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    transition: transform 0.2s;
+}
+
+.news__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.news__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.news__text {
+    max-height: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news__date {
+    color: #777;
+    padding-left: 1rem;
+}
+
+.news__container:active {
+    transform: scale(0.97);
+}
