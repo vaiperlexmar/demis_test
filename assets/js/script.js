@@ -44,7 +44,7 @@ $("#feedback-form").submit(function (e) {
         success: function (response) {
             if (response.success) {
                 form[0].reset();
-                $.get("/feedback", function (data) {
+                $.get("/feedback.php", function (data) {
                     if (Array.isArray(data) && data.length > 0) {
                         displayUsers(data);
                     }
