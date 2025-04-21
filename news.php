@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/includes/db/db.php';
-require_once __DIR__ . '/includes/functions.php';
+require_once __DIR__ . '/includes/helpers.php';
 
 $DB = new \DB\db\DB();
 
