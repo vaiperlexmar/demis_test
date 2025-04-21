@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/includes/db/db.php';
+require_once __DIR__ . '/includes/functions.php';
 
 $DB = new \DB\db\DB();
 
@@ -31,25 +32,10 @@ $news = $DB->select("SELECT * FROM news ORDER BY created_at DESC");
 </header>
 <main>
     <?php
-    foreach ($news as $item): ?>
-        <a class="link link_black" href="#">
-            <div class="news__container">
-                <div class="news__body">
-                    <h3 class="news__title">
-                        <?php
-                        echo $item['title']; ?>
-                    </h3>
-                    <p class="news__text">
-                        <?php
-                        echo $item['text']; ?>
-                    </p>
-                    <span class="news__date"><?php
-                        echo $item['created_at'] ?></span>
-                </div>
-            </div>
-        </a>
-    <?php
-    endforeach; ?>
+    foreach ($news as $item) {
+        echo createNewsCard($item);
+    }
+    ?>
 </main>
 
 

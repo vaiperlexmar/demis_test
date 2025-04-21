@@ -2,12 +2,11 @@
     display: flex;
     justify-content: center; /*centers items on the line (the x-axis by default)*/
     align-items: center; /*centers items on the cross-axis (y by default)*/
-    padding: 0 2rem;
+    padding-right: 4rem;
     position: absolute;
     width: 100%;
     height: 100%;
     overflow: hidden;
-
 }
 
 .form__input {
@@ -33,4 +32,10 @@
     padding: 1.5rem 0;
     text-transform: uppercase;
     margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .form__container {
+        padding-right: 12rem;
+    }
 }
